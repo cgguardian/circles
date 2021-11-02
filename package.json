@@ -1,0 +1,30 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~6.0.0"
+  },
+  "fitbit": {
+    "appUUID": "e93c9fee-0eb7-4e36-83d3-0f8aefd32646",
+    "appType": "clockface",
+    "appDisplayName": "Circles",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_sleep",
+      "access_activity",
+      "access_user_profile",
+      "access_exercise",
+      "access_location"
+    ],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "Circles"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}

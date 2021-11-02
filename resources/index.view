@@ -1,0 +1,137 @@
+<!---------------------------------------------------------------->
+<!-- Circles 1.0.7 -->
+<!-- Start: 27 October 2021 -->
+<!-- Current: 02 November 2021 -->
+<!-- Chris Merpaw -->
+<!---------------------------------------------------------------->
+<!-- Updates: -->
+<!-- The floors icon and circles keep bugging out until you turn 
+off and turn back on the screen. The distance icon was doing the
+same until I copied, deleted, and repasted the code back into the
+same spot. What. -->
+<!-- Battery use isn't actually a concern. The drainage was due
+to using my Sense to test the clockface and the constant sync/
+desync. This clockface doesn't *appear* to overuse the battery. -->
+<!---------------------------------------------------------------->
+
+<svg class="background">
+  <gradientRect width="100%" height="100%"
+    gradient-type="linear"
+    gradient-x1="0" gradient-y1="50"
+    gradient-x2="0" gradient-y2="100%-50"
+    gradient-color1="fb-cyan" gradient-color2="white" />
+  
+  <rect x="10%" y="47%" width="80%" height="2%" fill="white" opacity="0.7" pointer-events="visible">
+    </rect>
+  <circle cx="50%" cy="65%" r="180" fill="steelblue" opacity="0.4" />
+  <circle cx="100%" cy="80%" r="180" fill="steelblue" opacity="0.4" />
+  <circle cx="20%" cy="120%" r="180" fill="steelblue" opacity="0.4" />
+  <rect x="122" y="48" width="36%" height="2%" fill="white" opacity="0.3" pointer-events="visible">
+    </rect>
+  
+  <rect x="8%" y="16%" width="2%" height="50" fill="white" opacity="0.3" pointer-events="visible">
+    </rect>
+  <rect x="303" y="28%" width="2%" height="50" fill="white" opacity="0.3" pointer-events="visible">
+    </rect>
+  
+  <!-- Heart rate animation -->
+  <section>
+    <image id="heartIcon" x="84%" y="42" width="20" height="18" href="img/hr_icon.png">
+      <animate id="heartAnim" attributeName="opacity" begin="load;activate" from="1" to="0.4" dur="1" final="restore" repeatCount="indefinite" />
+    </image>
+  </section>
+  
+  <!-- Battery -->
+  <section>
+    <image id="batIcon" opacity="0.5" x="12%" y="43" width="30" height="15" href="img/bat_icon_e.png">
+    </image>
+    <rect id="batBar" opacity="0.5" x="42" y="46" width="1" height="9" fill="white" pointer-events="visible">
+    </rect>
+  </section>
+  
+  <image id="chargingIcon" opacity="0.7" x="12%" y="46" width="30" height="9" href="img/charging_icon_w.png">
+    </image>
+  
+  <text id="batLabel" />
+  
+  <!-- Steps -->
+  <circle id="stepsC" cx="67" cy="210" r="39" fill="white" opacity="0.1" pointer-events="visible"/>
+  <g id="moS">
+    <image id="stepsIcon" x="46" y="190" width="42" height="42" href="img/steps_icon_w.png" pointer-events="visible">
+    </image>
+  </g>
+  <text id="stepsTot" pointer-events="visible"/>
+  <arc x="27" y="51%" width="80" height="80" fill="white"
+    arc-width="5" start-angle="0" sweep-angle="360" />
+  <arc id="stepsA" x="27" y="51%" opacity="0.7" width="80" height="80" fill="seagreen"
+    arc-width="5" start-angle="0" sweep-angle="0" />
+  <arc id="stepsZ" x="27" y="51%" opacity="1.0" width="80" height="80" fill="seagreen"
+    arc-width="5" start-angle="0" sweep-angle="0" />
+  
+  
+  <!-- Distance -->
+  <circle id="distC" cx="117" cy="283" r="39" fill="white" opacity="0.1" pointer-events="visible"/>
+  <g id="moD">
+    <image id="distIcon" x="96" y="263" width="42" height="42" href="img/distance_icon_w.png" pointer-events="visible">
+    </image>
+  </g>
+  <text id="distTot" pointer-events="visible"/>
+  <arc x="77" y="73%" width="80" height="80" fill="white"
+    arc-width="5" start-angle="0" sweep-angle="360" />
+  <arc id="distA" x="77" y="73%" opacity="0.7" width="80" height="80" fill="darkcyan"
+    arc-width="5" start-angle="0" sweep-angle="0" />
+  <arc id="distZ" x="77" y="73%" opacity="1.0" width="80" height="80" fill="darkcyan"
+    arc-width="5" start-angle="0" sweep-angle="0" />
+  
+  <!-- Floors -->
+  <circle id="floorsC" cx="167" cy="210" r="39" fill="white" opacity="0.1" pointer-events="visible"/>
+  <g id="moF">
+    <image id="floorsIcon" x="146" y="190" width="42" height="42" href="img/floors_icon_w.png" pointer-events="visible">
+    </image>
+  </g>
+  <text id="floorsTot" pointer-events="visible"/>
+  <arc x="127" y="51%" width="80" height="80" fill="white"
+    arc-width="5" start-angle="0" sweep-angle="360" />
+  <arc id="floorsA" x="127" y="51%" opacity="0.7" width="80" height="80" fill="royalblue"
+    arc-width="5" start-angle="0" sweep-angle="0" />
+  <arc id="floorsZ" x="127" y="51%" opacity="1.0" width="80" height="80" fill="royalblue"
+    arc-width="5" start-angle="0" sweep-angle="0" />
+  
+  <!-- Active Minutes -->
+  <circle id="actMinsC" cx="217" cy="283" r="39" fill="white" opacity="0.1" pointer-events="visible"/>
+  <g id="moA">
+    <image id="actMinsIcon" x="196" y="263" width="42" height="42" href="img/activeMins_icon_w.png" pointer-events="visible">
+    </image>
+  </g>
+  <text id="actMinsTot" pointer-events="visible"/>
+  <arc x="177" y="73%" width="80" height="80" fill="white"
+    arc-width="5" start-angle="0" sweep-angle="360" />
+  <arc id="actMinsA" x="177" y="73%" opacity="0.7" width="80" height="80" fill="slateblue"
+    arc-width="5" start-angle="0" sweep-angle="0" />
+  <arc id="actMinsZ" x="177" y="73%" opacity="1.0" width="80" height="80" fill="slateblue"
+    arc-width="5" start-angle="0" sweep-angle="0" />
+  
+  <!-- Calories -->
+  <circle id="calsC" cx="267" cy="210" r="39" fill="white" opacity="0.1" pointer-events="visible"/>
+  <g id="moC">
+    <image id="calsIcon" x="246" y="188" width="42" height="42" href="img/cals_icon_w.png" pointer-events="visible">
+    </image>
+  </g>
+  <text id="calsTot" pointer-events="visible"/>
+  <arc x="227" y="51%" width="80" height="80" fill="white"
+    arc-width="5" start-angle="0" sweep-angle="360" />
+  <arc id="calsA" x="227" y="51%" opacity="0.7" width="80" height="80" fill="mediumpurple"
+    arc-width="5" start-angle="0" sweep-angle="0" />
+  <arc id="calsZ" x="227" y="51%" opacity="1.0" width="80" height="80" fill="mediumpurple"
+    arc-width="5" start-angle="0" sweep-angle="0" />
+
+  <!-- Clock -->
+  <text id="tempA" />
+  <text id="timeLabel" />
+  <g id="movingSecs">
+    <text id="timeLabelSecs" />
+  </g>
+  
+  <!-- Heart rate label -->
+  <text id="heartLabel" />
+</svg>

@@ -1,0 +1,111 @@
+.background {
+  viewport-fill: fb-cyan;
+}
+
+#timeLabel {
+  font-size: 90;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 40%;
+  y: 42%;
+  fill: white;
+}
+
+#timeLabelSecs {
+  font-size: 45;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 0%;
+  y: 42%;
+  fill: white;
+}
+
+#heartLabel {
+  font-size: 18;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: end;
+  x: 83%;
+  y: 17%;
+  fill: white;
+  opacity:0.5;
+}
+
+#batLabel {
+  font-size: 18;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 22%;
+  y: 17%;
+  fill: white;
+  opacity:0.5;
+}
+
+#tempA {
+  font-size: 18;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 50%;
+  y: 17%;
+  fill: white;
+  opacity:0.5;
+}
+
+#stepsTot {
+  font-size: 23;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 20%;
+  y: 65%;
+  fill: white;
+  opacity:0.0;
+}
+
+#floorsTot {
+  font-size: 23;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 65%;
+  fill: white;
+  opacity:0.0;
+}
+
+#distTot {
+  font-size: 23;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 35%;
+  y: 87%;
+  fill: white;
+  opacity:0.0;
+}
+
+#actMinsTot{
+  font-size: 23;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 65%;
+  y: 87%;
+  fill: white;
+  opacity:0.0;
+}
+
+#calsTot {
+  font-size: 23;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 80%;
+  y: 65%;
+  fill: white;
+  opacity:0.0;
+}

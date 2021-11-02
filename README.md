@@ -1,7 +1,5 @@
 # Circles
-Baby's first Fitbit clockface
-
-For Versa 3 and Sense
+Baby's first Fitbit clockface - Versa 3 and Sense
 
 Fitbit gallery page: https://gallery.fitbit.com/details/e93c9fee-0eb7-4e36-83d3-0f8aefd32646
 

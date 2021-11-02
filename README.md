@@ -10,7 +10,7 @@ First clockface. It's nothing too fancy.
 Included:
 
 - clock
-- heart rate
+- heart rate (dynamic; animation matches user heart rate)
 - battery %
 - interactable graphics for: steps, distance, floors, active zone minutes, calories burned
 
